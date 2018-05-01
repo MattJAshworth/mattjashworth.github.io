@@ -1,22 +1,80 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1561.1">
-  <style type="text/css">
-  </style>
-</head>
-<body>
+    <head>
+        <style>
+            .button {
+                background-color: #448CCB;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+        <meta charset="utf-8">
+            <title>Matt J Ashworth &middot; Software Engineer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head><body>
+        <div class="content-box">
+        <div class="page-content">
+            <header>
+                <h1>
+                    <a href="/" id="owo">Matt J Ashworth</a></h1><h2>Software Engineer</h2>
+            </header>
+            <p>Software Engineer studying Computer Science @ University of Hull.</p>
+            <p>Specialise in Android, Java and C#.</p>
+            <p>Check out my portfolio, Github and Twitter in the links below.</p>
+            <p>Drop me an email if you'd like to work.</p>
+            <a class="button" href="mailto:contact@mattjashworth.xyz" >contact@mattjashworth.xyz</a>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    <a href="portfolio.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/MattJAshworth">TWITTER</a>
+                </li>
+                <li>
+                    <a href="https://github.com/mattjashworth">GITHUB</a>
+                </li>
+                <li>
+                    <a href="https://github.com/mattjashworth/snapsave">SNAPSAVE</a>
+                </li>
+                <li>
+                    <a href="#">DISSERTATION</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@mattjashworth.xyz">CONTACT</a>
+                </li>
+            </ul>
+        </footer>
+        </div>
+        <script type="text/javascript">
+            var email = document.getElementById('email');
+        
+        email.onclick = email.onfocus = function () {
+            if (this.__active) return;
+            this.__active = true;
+            var self = this;
+            
+            setTimeout(function () {
+                       if (self.setSelectionRange) self.setSelectionRange(0, self.value.length);
+                       else self.select();
+                       }, 0);
+        };
     
-    <a class="twitter-timeline"
-        href="https://twitter.com/twittername"
-        data-tweet-limit="1">
-        Tweets by @twittername</a>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
-    
-</body>
+    email.onblur = function () {
+        this.__active = true;
+    };
+    </body>
 </html>
