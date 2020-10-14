@@ -109,6 +109,21 @@ h6 {
   color: #f0f0f0;
 }
 
+.container {
+  width: 80%;
+  background: #ddd;
+  margin: calc(50vh - 30px) auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.progress {
+  width: 1px;
+  height: 3px;
+  background: #006B5A;
+  transition: width .1s linear;
+}
+
 .screen {
   background-color: #fff;
   padding: 0;
