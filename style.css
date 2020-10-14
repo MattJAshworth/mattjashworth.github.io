@@ -418,17 +418,19 @@ td > #heart8:checked ~ label.zmr:before {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   background: #ddd;
-  margin: calc(50vh - 30px) auto;
+  margin: calc(50vh - 40px) auto;
   text-align: center;
-  padding-bottom: 10px;
+  position: absolute;
+  z-index: 1;
+  visibility: visible;
 }
 
 .progress {
   width: 1px;
   height: 3px;
-  background: #006B5A;
+  background: #ff564c;
   transition: width .1s linear;
 }
 
