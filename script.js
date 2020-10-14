@@ -7,6 +7,7 @@ var current = 0;
 
 var timer;
 var percent = 0;
+var visFlag = true;
 
 document.getElementById("audio");
 audio.addEventListener("playing", function(_event) {
@@ -37,6 +38,18 @@ function togglePlayPause() {
       playpause.title = "Play";
       audio.pause();
    }
+}
+
+function ShowHideProgress() {
+
+	if (visFlag) {
+		visFlag = false;
+		document.getElementById("progress").style.visibility = "hidden";
+	} else {
+		visFlag = true;
+		document.getElementById("progress").style.visibility = "visible";
+	}
+	
 }
 
 function nextSong() {
