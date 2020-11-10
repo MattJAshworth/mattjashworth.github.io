@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    h2>Spotify Play Tracker by MattJAshworth</h2>
+    <h2>Spotify Play Tracker by MattJAshworth</h2>
 <p>Your access code is below:</p>
 <p id="authCodeID"></p>
 
@@ -22,7 +22,7 @@
     var url_string = window.location.href
     var url = new URL(url_string);
     var authCode = url.searchParams.get("code");
-    document.getElementById('authCodeID').value = authCode
+    document.getElementById('authCodeID').innerHTML = authCode
     </script>
 </body>
 </html>
