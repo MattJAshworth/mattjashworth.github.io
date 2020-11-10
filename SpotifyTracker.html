@@ -13,16 +13,16 @@
     </style>
 </head>
 <body>
-    
-    <form action="">
-        <input class="d-block" type="text" name="txtAuthCode" id="txtAuthCode" placeholder="Spotify Authorization Code">
-    </form>
+
+    h2>Spotify Play Tracker by MattJAshworth</h2>
+<p>Your access code is below:</p>
+<p id="authCodeID"></p>
 
     <script>
     var url_string = window.location.href
     var url = new URL(url_string);
     var authCode = url.searchParams.get("code");
-    document.getElementById('txtAuthCode').value = authCode
+    document.getElementById('authCodeID').value = authCode
     </script>
 </body>
 </html>
