@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spotify Tracker by MattJAshworth</title>
+
+    <style>
+    .d-block {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <input class="d-block" type="text" name="txtAuthCode" id="txtAuthCode" placeholder="Spotify Authorization Code">
+    </form>
+
+    <script>
+    var url_string = window.location.href
+    var url = new URL(url_string);
+    var authCode = url.searchParams.get("code");
+    document.getElementById('mensaje').value = authCode
+    </script>
+</body>
+</html>
