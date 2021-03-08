@@ -45,6 +45,11 @@ a{
     font-size: 1.2rem;
     padding: 10px;
 }
+
+.section-1b a{
+    font-size: 0.9rem;
+    padding: 10px;
+}
 /* section 2 */
 .section-2{
     padding-top: 20vh;
