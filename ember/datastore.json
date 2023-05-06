@@ -599,7 +599,7 @@
     "nameID": "77",
     "firstname": "Lily",
     "puns": [
-
+      "What do you call a woman with a frog on her head? Lily."
     ]
   },
   {
@@ -620,7 +620,7 @@
     "nameID": "80",
     "firstname": "Lilly",
     "puns": [
-
+      "What do you call a woman with a frog on her head? Lilly."
     ]
   },
   {
@@ -927,6 +927,20 @@
     "firstname": "Adele",
     "puns": [
       "Do you like Adele? Cause I can tell you wanna be rolling in the D."
+    ]
+  },
+  {
+    "nameID": "124",
+    "firstname": "Nina",
+    "puns": [
+      "What is the perfect name for an ambulance? Nina." 
+    ]
+  },
+  {
+    "nameID": "125",
+    "firstname": "Anette",
+    "puns": [
+      "What do you call a woman between two goalposts? Anette." 
     ]
   }
 ]
