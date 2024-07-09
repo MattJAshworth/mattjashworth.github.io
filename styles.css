@@ -1,0 +1,588 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    color:white;
+    text-decoration:none;
+    font-weight: 600 !important;
+    color:#8b2be2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: auto;
+}
+
+.social-icons {
+    text-align: center;
+    margin-left: auto;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8b2be2;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.about, .projects, .skills {
+    margin-bottom: 2rem;
+}
+
+.about h2, .projects h2, .skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color:#555;
+}
+
+.text-rainbow-animation {
+    background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 35s linear infinite;
+  }
+
+  @keyframes rainbow-animation {
+      to {
+          background-position: 4500vh;
+      }
+  }
+
+
+.tabs {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tab-link {
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.tab-link:hover {
+    color: #fff;
+}
+
+.tab-link.active {
+    color: #fff;
+}
+
+.tab-divider {
+    height: 1px;
+    background-color: #8b2be2;
+    margin-bottom: 1rem;
+}
+.tab-divider-bottom {
+    height: 1px;
+    background-color: #8b2be2;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+}
+.profile-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+     margin-right: auto;
+  }
+
+  p.profile-about {
+    margin-top: 2rem;
+    color: #555;
+  }
+
+  .git {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-item {
+    width: 280px;
+    text-align: left;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    margin: 1rem 0 0.5rem;
+    text-align: left;
+}
+
+.project-item p {
+    color: #bbb;
+    text-align: left;
+}
+
+.project-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+    font-size: small;
+    font-weight: 600 !important;
+    color:#8b2be2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.project-item a:hover {
+    color: #ddd;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list li {
+    display: inline-block;
+    background-color: #333;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #555;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    color: #555;
+    font-size: small;
+}
+
+img.play-snake {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+}
+
+
+.rainbow{
+    -webkit-animation: rainbow 5s infinite;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 1rem;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+      color: orange;
+    }
+    10% {
+      color: purple;
+    }
+    20% {
+      color: red;
+    }
+    30% {
+      color: CadetBlue;
+    }
+    40% {
+      color: yellow;
+    }
+    50% {
+      color: coral;
+    }
+    60% {
+      color: green;
+    }
+    70% {
+      color: cyan;
+    }
+    80% {
+      color: DeepPink;
+    }
+    90% {
+      color: DodgerBlue;
+    }
+    100% {
+      color: orange;
+    }
+  }
+
+/* Existing styles... */
+
+.snake-game-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.snake-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Existing styles... */
+
+/* CSS styles for the mobile device overlay */
+/* CSS styles for the Android device overlay */
+.android-device-overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #1f1f1f; /* Samsung device background color */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.device {
+    position: relative;
+    width: 280px; /* Adjust device width as needed */
+    height: 460px; /* Adjust device height as needed */
+    background-color: #000; /* Inner screen background color */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.device-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Inner screen background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.snake-canvas:focus {
+    outline: none; /* Ensure no outline when canvas is focused */
+}
+
+
+.score {
+    color: #fff; /* Score text color */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.android-navigation button {
+    background-color: #4caf50; /* Navigation button background color */
+    color: #fff; /* Navigation button text color */
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.android-navigation button:hover {
+    background-color: #45a049; /* Navigation button hover background color */
+}
+
+.close-btn:hover {
+    background-color: #e63c3c; /* Close button hover background color */
+}
+
+.device {
+    position: relative;
+    width: 280px; /* Adjust device width as needed */
+    height: 460px; /* Adjust device height as needed */
+    background-color: #000; /* Inner screen background color */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.status-bar {
+    height: 20px;
+    background-color: #3f51b5; /* Status bar color */
+}
+
+.device-screen {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 40px); /* Adjust height to exclude status bar */
+    background-color: #000; /* Inner screen background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Arrange elements at top and bottom */
+    padding: 20px;
+}
+
+.snake-game-container {
+    width: 280px; /* Adjust container width as needed */
+    height: 460px; /* Adjust container height as needed */
+    background-color: #000; /* Background color for the container */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+    position: relative;
+}
+
+.snake-canvas {
+    width: 100%; /* Occupy full width of the container */
+    height: calc(100% - 90px); /* Adjust height to exclude space for navigation buttons */
+    display: block;
+    background-color: black; /* Canvas background color */
+    position: relative;
+    touch-action: none;
+}
+
+.android-navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.android-navigation button {
+    background-color: #4caf50; /* Navigation button background color */
+    color: #fff; /* Navigation button text color */
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.android-navigation button:hover {
+    background-color: #45a049; /* Navigation button hover background color */
+}
+
+/* General styles */
+
+
+.snake-game-container {
+    width: 280px; /* Adjust container width as needed */
+    height: 460px; /* Adjust container height as needed */
+    background-color: #000; /* Background color for the container */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #1976d2; /* Status bar background color */
+    color: white; /* Status bar text color */
+    font-size: 12px;
+}
+
+.status-left, .status-right {
+    display: flex;
+    align-items: center;
+}
+
+.status-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.status-icon {
+    margin-right: 5px;
+}
+
+.android-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: white; /* Navigation bar background color */
+}
+
+.nav-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: transparent; /* Button background color */
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon {
+    color: black; /* Icon color */
+    font-size: 14px;
+}
+
+.nav-button.back { background-color: white; margin-left: 20px; } /* Grey background for back button */
+.nav-button.home { background-color: white; } /* Grey background for home button */
+.nav-button.recents { background-color: white; margin-right: 40px} /* Grey background for recents button */
+
+.nav-button.home .outline, .nav-button.recents .outline {
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.game-score {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.snake-canvas:focus {
+    outline: none; /* Ensure no outline when canvas is focused */
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+

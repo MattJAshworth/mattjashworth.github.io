@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta properties -->
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Matt J Ashworth</title>
+    <meta content="Android Engineer"
+          name="description">
+    <meta content="Matt J Ashworth, MJA, Android Engineer, Android, Mobile" name="keywords">
+    <meta content="Matt J Ashworth" name="title">
+    <meta content="Matt J Ashworth" property="og:title">
+    <meta content="Android Engineer"
+          property="og:description">
+    <meta content="https://mattjashworth.xyz" property="og:url">
+    <meta content="mattjashworth.xyz" property="og:site_name">
+    <meta content="https://mattjashworth.xyz/res/cover/website.png"
+          property="og:image">
+
+    <meta content="mattjashworth.xyz" property="twitter:domain">
+    <meta content="https://mattjashworth.xyz/" property="twitter:url">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="Matt J Ashworth" name="twitter:title">
+    <meta content="Android Engineer and Developer"
+          name="twitter:description">
+    <meta content="https://mattjashworth.xyz/res/cover/website.png"
+          property="twitter:image">
+
+
+    <!-- stylesheets -->
+    <link href="./styles/tailwindoutput.css" rel="stylesheet">
+
+    <!-- favicons -->
+    <link href="favicons/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png">
+    <link href="favicons/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="favicons/site.webmanifest" rel="manifest">
+</head>
+
+<body data-barba="wrapper" x-data>
+
+<div class="load-container">
+    <div class="loading-screen"></div>
+</div>
+
+<div class="h-min">
+    <!-- navbar goes here -->
+    <nav class="max-w-7xl mx-auto px-8 md:mx-8 lg:mx-auto md:flex md:items-center md:justify-between"
+         x-data="{ navBar: false }">
+        <div class="flex justify-between items-center h-24">
+            <a href="https://mattjashworth.xyz">
+                <svg height="60" viewBox="0 0 5000 5000" width="60"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+                        <style>
+                            .cls-1 {
+                                filter: url(#filter);
+                            }
+                        </style>
+                        <filter filterUnits="userSpaceOnUse" id="filter">
+                            <feOffset in="SourceAlpha" result="offset"/>
+                            <feGaussianBlur result="blur" stdDeviation="10.536"/>
+                            <feFlood flood-opacity="0.35" result="flood"/>
+                            <feComposite in2="blur" operator="in" result="composite"/>
+                            <feBlend in="SourceGraphic" result="blend"/>
+                            <feGaussianBlur in="SourceAlpha" result="blur-2" stdDeviation="15.811"/>
+                            <feFlood flood-opacity="0.35" result="flood-2"/>
+                            <feComposite in2="blur-2" operator="out" result="composite-2"/>
+                            <feOffset result="offset-2"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="composite-3"/>
+                            <feBlend in2="blend" mode="multiply" result="blend-2"/>
+                        </filter>
+                    </defs>
+                    <g class="cls-1" id="logo">
+                        <image height="4968" id="tg" width="4968" x="16"
+                               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAMAAAC3Ycb+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKhQTFRFAAAAAAAAEBAQb29v7+/v////39/fX19ff39/UFBQYGBgn5+fgICAQEBAkJCQwMDA0NDQMDAwv7+/oKCgICAg4ODg8PDwcHBwPz8/T09PsLCwz8/Pr6+vj4+PKSkpW1tbfHx8ZWVl19fXY2NjGRkZx8fHFBQU2tra2NjYDw8PBQUFxsbGtra2OTk5mJiY2dnZ09PT+Pj4Ly8vra2tq6urFRUVDg4OKysrBoP1WwAAADh0Uk5TAP////////////////////////////////////////////////////////////////////////+1/GPFAAAMwUlEQVR4nO3daWPiRhaF4SAj22AwZnWPlyyd7qwzmcz+///ZmEWlqlKVdHDje9T4PJ8SLEjxXotNwvnmGxERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERETkPg/eDnRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrDrmSInRrzRXexOPJyLnZqTLToi2FZXl4l7s319gcj/5LxyyXD60T77aY3PZwJOzUmXPOk3Llp3Jmb/Q+m9SXj/SW3mU0v+zcRdmpMuOZhmZ7IYR7lrL7o7nBRfLenh8snb5D0y7BTY8I1l2VyItU8ymFz03l0txfVpr3bRdipMcGSp2VyIjf1xfWF1SXTQeYmereLsFNjgiV7A/Em4s2jeyALt2nvdhF2akywZH8gbiL+PDoH4t9C33YRdmpMsORgIIeJBPPoHMjC27Zvuwg7NSZYcjiQ3UTCeXQNJLyBnu0i7NSYYMnRQF4mEs2jayCLYOOe7SLs1JhgyfFAysv4gnrb1EDi6y9tSoPYqTHBkhsDaai3TQ1kEW++skmNYafGBEv+woE0r96rXYSdGhMs+QsH4naQSS93EXZqTLBkN5C7MrREBuKuvR647fu0i7BTY4Ilu6RTV3Rn7H5Q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"
+                               y="156"/>
+                    </g>
+                </svg>
+            </a>
+
+            <button @click="navBar = !navBar" class="md:hidden text-white focus:outline-none">
+                <svg fill="none" height="18" viewBox="0 0 26 18" width="26" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+                            fill="white"/>
+                </svg>
+            </button>
+        </div>
+
+        <ul :class="{'top-[95px]': navBar, 'opacity-0': !navBar }"
+            class="md:flex md:items-center z-[1] text-center md:z-auto md:static absolute w-full left-0 md:w-auto backdrop-blur md:py-0 space-x-4 md:opacity-100 top-[400px] transition-all ease-in duration-400">
+
+            <li class="ml-4 my-6 md:my-0 md:mx-0">
+                <a @click="navBar = false"
+                   class="py-2 md:px-3 text-xl text-white hover:bg-blue-700 hover:text-white rounded transition duration-300"
+                   href="projects">Projects</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a @click="navBar = false"
+                   class="py-2 md:px-3 text-xl text-white hover:bg-blue-700 hover:text-white rounded transition duration-300"
+                   href="skills">Skills</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a @click="navBar = false"
+                   class="py-2 md:px-3 text-xl text-white hover:bg-blue-700 hover:text-white rounded transition duration-300"
+                   href="contact">Contact</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a @click="navBar = false"
+                   class="py-2 md:px-3 text-xl text-white hover:bg-blue-700 hover:text-white rounded transition duration-300"
+                   href="cv">CV</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a class="py-2 md:px-3 text-xl text-white hover:bg-blue-700 hover:text-white rounded transition duration-300"
+                   href="https://blog.mattjashworth.xyz">Dev Blog</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- content goes here -->
+    <div class="py-32 text-center animate-this cursor-none" data-barba="container" data-barba-namespace="home">
+        <h2 class="font-extrabold text-6xl py-5 xl:mx-40 2xl:mx-80 lg:text-8xl text-white md:text-6xl cursorHover">
+          
+<span class="text-blue-700">Matt</span>
+            Ashworth
+        </h2>
+        <p class="text-xl text-white py-8 px-3 xl:mx-80 2xl:mx-110 md:text-2xl cursorHover">
+            an Android Developer & Full Stack Software Engineer
+        </p>
+
+        <a href="contact">
+            <button
+                    class="py-6 my-10 px-7 text-xl md:text-lg md:py-5 md:px-7 md:my-8 xl:my-14 xl:px-10 xl:py-7 rounded-full bg-white button transition duration-200 ease-in-out text-blue-700 hover:text-white hover:bg-blue-500">
+                CONTACT
+            </button>
+        </a>
+
+        <p class="text-slate-300 footer mt-24 cursorHover">
+            <span class="text-white">Matt J Ashworth</span>
+            <br>
+            Copyright &copy;<span id="year"></span> All rights reserved
+        </p>
+    </div>
+</div>
+
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+<script src="./dist/bundle.js"></script>
+<script>document.getElementById("year").innerHTML = new Date().getFullYear().toString();</script>
+
+</body>
+
+</html>
