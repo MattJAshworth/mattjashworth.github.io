@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matt Ashworth - Android Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Matt Ashworth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -12,141 +13,709 @@
     <link rel="manifest" href="favicons/site.webmanifest">
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="author" content="Matt Ashworth">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+     <meta name="author" content="Matt Ashworth">
     <meta name="keywords" content="Android developer, engineer, full stack developer, software, experience, England, North West, Preston, Manchester, UK">
     <meta name="description" content="Matt Ashworth (Matthew James Ashworth, Matthew Ashworth, Matt J Ashworth) is an Android developer, engineer, and full stack developer with experience in software development. Located in Preston, Manchester, North West, UK.">
+    <style>
+        body {
+            font-family: 'Geologica', sans-serif;
+            background-color: #f5f5f5; /* Light grayish blue background */
+            color: #1a202c; /* Dark gray text */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
 
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e0e7ff;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6366f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4f46e5;
+        }
+
+        /* Animation for sections appearing on scroll */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS to add offset for the first app section when scrolled to */
+        #app1-section {
+            scroll-margin-top: 2rem; /* Adjust this value (e.g., 64px) as needed for the desired offset */
+            transition: background-color 0.8s ease-in-out; /* Smooth transition for background color */
+        }
+
+        /* Button hover effect */
+        .store-button {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .store-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Hero section specific styling */
+        .hero-section {
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        /* Animated Arrow */
+        .scroll-arrow {
+            animation: bounce 2s infinite;
+            transition: transform 0.3s ease;
+            position: absolute;
+            bottom: 2rem;
+        }
+        .scroll-arrow:hover {
+            transform: scale(1.1);
+            animation-play-state: paused; /* Optional: pause animation on hover */
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-left: auto;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #000000;
+        }
+
+        .social-hero-icons {
+            text-align: center;
+            margin-left: auto;
+        }
+
+        .social-hero-icons a {
+            color: #1a1c23;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-hero-icons a:hover {
+            color: #8b2be2;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Specific styles for responsive column-like behavior with fixed divider */
+        .app-content-wrapper {
+            position: relative; /* Establish positioning context for absolute children */
+            display: flex;
+            flex-direction: column; /* Default vertical stack */
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 1rem; /* Adjust padding if needed */
+        }
+
+        @media (min-width: 768px) { /* md breakpoint */
+            .app-content-wrapper {
+                flex-direction: row; /* Horizontal on md */
+                align-items: flex-start; /* Align top for text/image */
+            }
+
+            .image-col {
+                order: 2; /* Image on the right */
+                flex: 1; /* Take half space */
+                max-width: 50%; /* Max width for image column */
+                display: flex;
+                justify-content: center; /* Center image horizontally */
+                align-self: center; /* Center image vertically in its space */
+            }
+
+            .text-col {
+                order: 1; /* Text on the left */
+                flex: 1; /* Take half space */
+                max-width: 50%; /* Max width for text column */
+                text-align: left;
+                padding-right: 2rem; /* Add some space between text and image */
+            }
+
+            .full-width-divider {
+                /* On md, this will be visually between the image and text if they are laid out carefully.
+                   However, if it's truly "between" them and full width, it implies
+                   the columns are not truly side-by-side on the same line,
+                   but rather one above the other, or the divider is absolutely positioned
+                   to span the whole section.
+                */
+            }
+            
+        }
+
+        /* --- CAROUSEL SPECIFIC STYLES (Redesigned) --- */
+        .carousel-image-area {
+            position: relative;
+            width: 100%;
+            max-width: 300px; /* Max width for the image carousel itself (mobile screenshot width) */
+            height: 533px; /* Fixed height for 1080x1920 aspect ratio (1920/1080 * 300px = 533.33px) */
+            margin: 0 auto; /* Center the image carousel */
+            overflow: hidden; /* Hide overflowing slides */
+        }
+
+        .carousel-slides {
+            display: flex; /* Arrange slides horizontally */
+            height: 100%; /* Take full height of carousel-image-area */
+            transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
+        }
+
+        .carousel-slide-item { /* Renamed from .carousel-slide to avoid confusion, now just wraps the image */
+            min-width: 100%; /* Each slide item takes full width of the carousel-slides container */
+            height: 100%; /* Take full height */
+            box-sizing: border-box; /* Include padding/border in width calculation */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Ensure background is white behind image */
+        }
+
+        .carousel-slide-item img {
+            width: 100%; /* Fill the wrapper width */
+            height: 100%; /* Fill the wrapper height */
+            object-fit: contain; /* IMPORTANT: Contain the image within the bounds, showing full screenshot */
+            display: block; /* Remove extra space below image */
+            border-radius: 0; /* No border-radius on the image itself */
+            box-shadow: none; /* No shadow on the image itself */
+        }
+
+        .work-details-container {
+            width: 100%;
+            max-width: 300px; /* Match carousel width */
+            margin: 0 auto; /* Center the text container */
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0 0 0.75rem 0.75rem; /* rounded-xl on bottom, flat on top */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+            margin-top: -0.5px; /* Slight overlap to hide potential gap between image and text containers */
+            text-align: center; /* Default text alignment for mobile */
+        }
+
+        @media (min-width: 768px) {
+            .carousel-image-area {
+                max-width: 400px; /* Slightly larger image on desktop */
+                height: 711px; /* Maintain 9:16 aspect ratio (1920/1080 * 400px = 711.11px) */
+            }
+            .work-details-container {
+                max-width: 600px; /* Wider text area for desktop */
+                padding: 3rem;
+                text-align: left; /* Align text to left on desktop */
+            }
+
+            /* Combine carousel and text side-by-side on desktop */
+            .work-section .container {
+                flex-direction: row; /* Make the container a row on desktop */
+                align-items: flex-start; /* Align items to the top */
+                justify-content: center; /* Center the combined block */
+                gap: 2rem; /* Space between image and text blocks */
+            }
+
+            .carousel-image-area {
+                /* On desktop, this will be the left part of the combined block */
+                margin: 0; /* Remove auto margin */
+                border-radius: 0.75rem; /* Full rounded corners for the image block */
+            }
+
+            .work-details-container {
+                /* On desktop, this will be the right part of the combined block */
+                margin: 0; /* Remove auto margin */
+                border-radius: 0.75rem; /* Full rounded corners for the text block */
+            }
+        }
+
+
+        /* Carousel Navigation Buttons */
+        .carousel-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white;
+            border: none;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            z-index: 20; /* Ensure buttons are above slides */
+            border-radius: 0.375rem; /* rounded-md */
+            transition: background-color 0.3s ease;
+        }
+        .carousel-nav-btn:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+        }
+        .carousel-nav-btn.prev {
+            left: -0.1rem; /* Position left button */
+        }
+        .carousel-nav-btn.next {
+            right: -0.1rem; /* Position right button */
+        }
+
+        /* Carousel Pagination Dots */
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .carousel-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #d1d5db; /* gray-300 */
+            border-radius: 50%; /* Circular dots */
+            margin: 0 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .carousel-dot.active {
+            background-color: #4f46e5; /* indigo-600 for active dot */
+        }
+
+       /* --- STACK CARDS STYLES (Redesigned for single-item cards) --- */
+        .work-stack-details {
+            width: 100%;
+            max-width: 600px; /* Overall width for the flex container */
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap; /* Allow cards to wrap to the next line */
+            justify-content: center; /* Center the cards horizontally */
+            gap: 0.5rem; /* Smaller space between individual cards */
+        }
+
+        .stack-card {
+            background-color: #e0e7ff; /* Light indigo background */
+            color: #4338ca; /* Darker indigo text */
+            padding: 0.5rem 1rem; /* Padding for the pill shape */
+            border-radius: 9999px; /* Fully rounded/pill shape */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            font-size: 0.9rem; /* Smaller font size */
+            font-weight: 500; /* Medium font weight */
+            white-space: nowrap; /* Prevent text from wrapping inside the card */
+            display: inline-flex; /* Use inline-flex to center content if needed */
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .stack-card:hover {
+            transform: translateY(-2px);
+            background-color: #c7d2fe; /* Slightly darker on hover */
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="header-content">
-                <img src="assets/mjastudio_logo.png" alt="Logo" class="logo">
-                <div class="social-icons">
+<body class="antialiased">
+
+    <section id="hero" class="hero-section min-h-screen flex flex-col items-center justify-center">
+
+        <div class="social-hero-icons absolute top mt-16">
                     <a href="https://blog.mattjashworth.xyz" target="_blank"><i class="fa-solid fa-code"></i></a>
                     <a href="https://linkedin.com/in/mattjashworth" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/mattjashworth" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://twitter.com/mattjashworth" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://instagram.com/mattjashworth" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
-            </div>
-            <div id="headerName"><h1>Matt Ashworth</h1></div>
-            <p>Full Stack Android Engineer</p>
-        </header>
-        <section id="about" class="about">
-            <p>Hello! I'm Matt Ashworth. I build beautiful, functional apps for the world's most popular mobile OS. Skilled in Java/Kotlin and Android Studio. Passionate about creating user-centric experiences.</p>
-            <br>
-            <a class="header-contact" href="mailto:contact@mattjashworth.xyz">Contact Me ↗</a>
-        </section>
-        <div class="tabs">
-            <a href="#projects" class="tab-link active" onclick="openTab(event, 'projects')">Projects</a>
-            <a href="#skills" class="tab-link" onclick="openTab(event, 'skills')">Skills</a>
+
+        <div class="text-center p-6">
+            <img src="assets/matt_ashworth_code.png" alt="My Apps Logo" class="mx-auto mb-12 h-24 md:h-32 lg:h-40 w-auto">
+
+            <a href="#app1-section" class="scroll-arrow inline-block mt-8" aria-label="Scroll to first app">
+                <div class="scroll-arrow-wrapper absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                    <svg class="w-12 h-12 md:w-16 md:h-16 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                    </svg>
+                </div>
+            </a>
         </div>
-        <div class="tab-divider"></div> <!-- Divider below tabs -->
-        <section id="projects" class="tab-content active">
-            <div class="project-list">
-                <div class="project-item">
-                    <a href="https://github.com/mattjashworth/SpinnerTools"><img src="assets/spinnertools.jpg" alt="Project One"></a>
-                    <h3>Spinner Tools</h3>
-                    <p>A modern Android Spinner library.<br>Built with Kotlin.<br>Available on JitPack.</p>
-                    <a href="https://github.com/mattjashworth/SpinnerTools">github.com/mattjashworth/spinnertools →</a>
-                </div>
-                <div class="project-item">
-                    <a href="https://mattjashworth.xyz/ember"><img src="assets/ember.jpg" alt="Project One"></a>
-                    <h3>Ember - A Dating Companion</h3>
-                    <p>Swipe left, swipe right, we deliver you pickup lines to open the conversation and break the ice.</p>
-                    <a href="https://mattjashworth.xyz/ember">mattjashworth.xyz/ember →</a>
-                </div>
-                <div class="project-item">
-                    <a href="#"><img src="assets/metrobee_background.png" alt="MetroBee Screenshots"></a>
-                    <h3>MetroBee</h3>
-                    <p>A beautiful & modern live departures app for Manchester Bee Network trams. *Formerly Metrolink</p>
-                    <a href="#">metrobee.app →</a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/MattJAshworth/AttackMaster"><img src="assets/attackmaster.jpg" alt="Attack Master Sceenshots"></a>
-                    <h3>Attack Master</h3>
-                    <p>A reward link aggregator and delivery system for Coin Master by MoonActive.<br><br></p>
-                    <a href="https://github.com/MattJAshworth/AttackMaster">github.com/mattjashworth/attackmaster →</a>
-                </div>
-                <div class="project-item">
-                    <a href="https://regalgaming.co.uk"><img src="assets/solarkt.jpg" alt="Solar 2 Screenshots"></a>
-                    <h3>Solar</h3>
-                    <p>Regal Gaming Technologies' premiere customer application for Machine Management and Performance Data</p>
-                    <a href="https://regalgaming.co.uk">regalgaming.co.uk →</a>
-                </div>
-                <div class="project-item">
-                    <a href="https://regalgaming.co.uk"><img src="https://via.placeholder.com/280x180" alt="Lunar 2 Screenshots"></a>
-                    <h3>Lunar</h3>
-                    <p>Regal Gaming Technologies' internal workplace app for Staff.<br><br></p>
-                    <a href="https://regalgaming.co.uk">regalgaming.co.uk →</a>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="tab-content">
-            <ul class="skills-list">
-                <li>Android</li>
-                <li>Java</li>
-                <li>Kotlin</li>
-                <li>XML</li>
-                <li>OOP</li>
-                <li>MVVM</li>
-                <li>MVP</li>
-                <li>C#</li>
-                <li>C++</li>
-                <li>JNI</li>
-                <li>Android NDK</li>
-                <li>Xamarin</li>
-                <li>Git</li>
-                <li>Google Play</li>
-                <li>CI/CD</li>
-                <li>SQL</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </section>
-        <div class="tab-divider-bottom"></div> 
-        <section id="about" class="about">
-            <img src="assets/mja.jpeg" class="profile-img" alt="Avatar">
-            <p class="profile-about">I'm constantly developing. So pop back from time to time and check out my new projects. See my open source contributions, libraries and apps on GitHub below. Tap the code icon at the top of this page to read my dev blog (If I remember to write things)</p>
-            <br>
-            <a class="header-contact"  href="https://github.com/MattJAshworth"><button class="git">GitHub</button></a>
-        </section>
-        <div class="tab-divider"></div> 
+    </section>
 
-        <footer>
-            <p>&copy; 2024 Matt Ashworth</p>
-            <i class="fa-solid fa-gamepad fa-xl rainbow" onclick="startSnakeGame()"></i>
-        </footer>
-    </div>
-    <div id="snake-game-overlay" class="android-device-overlay">
-        <div class="snake-game-container">
-            <div class="status-bar">
-                <div class="status-left">
-                    <span class="status-icon">●</span> 4G
-                </div>
-                <div class="status-center">
-                    <div class="status-time"><span id="status-time">0</span></div>
+<section id="app1-section" class="w-full min-h-screen flex items-center justify-center py-8 reveal-on-scroll relative bg-gray-200">
+    <div class="max-w-7xl w-full flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="md:w-1/2 flex justify-center mb-8 md:mb-0 md:ml-8 order-first md:order-last relative z-0">
+            <img src="assets/ember.png" alt="We Are Warriors Screenshot" class="w-64 md:w-full max-w-xs md:max-w-md rounded-lg">
+        </div>
 
-                </div>
-                <div class="status-right">
-                    <span class="status-icon">●●●</span> WiFi
-                </div>
-            </div>
-            <div class="snake-score">Score: <span id="score">0</span></div>
+        <div class="w-full h-0.5 bg-gray-700 mb-8 md:hidden "></div>
 
-            <canvas id="snakeCanvas" class="snake-canvas" tabindex="0"></canvas>
-            <div class="android-navigation">
-                <div class="nav-button back" onclick="closeSnakeGame()"><span class="nav-icon">&#x3008;</span></div>
-                <div class="nav-button home" onclick="closeSnakeGame()"><span class="nav-icon outline">&#9711;</span></div>
-                <div class="nav-button recents" onclick="closeSnakeGame()"><span class="nav-icon outline">&#9634;</span></div>
+        <div class="md:w-1/2 text-center md:text-left md:mr-8 p-8 ">
+            <h3 class="text-4xl md:text-5xl font-bold text-black mb-4">Ember: A Dating Companion</h3>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-xl mx-auto md:mx-0">Pickup lines by name. An app to get off on the right start on dating apps.</p>
+            <p class="text-base md:text-sm text-gray-700 mb-8 max-w-xl mx-auto md:mx-0">Open the conversation the right way. Make her laugh. Ember provides you with pickup lines and puns for most girls names.</p>
+            <p class="text-base md:text-sm text-gray-700 mb-2 max-w-xl mx-auto md:mx-0">For Example:</p>
+            <p class="text-base md:text-sm text-gray-700 mb-4 max-w-xl mx-auto md:mx-0">Whats the difference between a wasp and a bee? A wasp is mean and agressive while Abbie is sweet and cute.</p>
+            <p class="text-base md:text-sm text-gray-700 mb-8 max-w-xl mx-auto md:mx-0">Okay, that wasn't great but we promise our app has hundreds of better puns and pickup lines.</p>
+
+            <div class="flex flex-col sm:flex-row justify-center md:justify-center gap-4">
+                <a href='https://play.google.com/store/apps/details?id=xyz.mattjashworth.ember&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
             </div>
         </div>
-        
     </div>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/snake.js"></script>
+</section>
+
+<section id="app2-section" class="w-full min-h-screen flex items-center justify-center py-8 relative reveal-on-scroll relative overflow-hidden bg-white">
+    <div class="max-w-7xl w-full flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div class="md:w-1/2 flex justify-center mb-8 md:mb-0 md:ml-8 order-first md:order-first relative z-0">
+            <img src="assets/spinner_tools.png" alt="We Are Warriors Screenshot" class="w-64 md:w-full max-w-xs md:max-w-md rounded-lg">
+        </div>
+
+        <div class="w-full h-0.5 bg-gray-700 mb-8 md:hidden "></div>
+
+        <div class="md:w-1/2 text-center md:text-left md:mr-8 p-8 ">
+            <h3 class="text-4xl md:text-5xl font-bold text-black mb-4">Spinner Tools</h3>
+            <p class="text-lg md:text-xl text-gray-700 mb-2 max-w-xl mx-auto md:mx-0">A modern Android spinner library.</p>
+            <p class="text-base md:text-sm text-gray-700 mb-5 max-w-xl mx-auto md:mx-0">Built with Kotlin. Available on JitPack</p>
+            <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                <a class="github-button" href="https://github.com/MattJAshworth/SpinnerTools" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="View Spinner Tools on GitHub">View Spinner Tools on Github</a>
+                <a class="github-button" href="https://github.com/MattJAshworth" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Follow @MattJAshworth on GitHub">Follow @MattJAshworth</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="app3-section" class="w-full min-h-screen flex items-center justify-center py-8 relative reveal-on-scroll relative overflow-hidden bg-gray-200">
+    <div class="max-w-7xl w-full flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div class="md:w-1/2 flex justify-center mb-8 md:mb-0 md:ml-8 order-first md:order-last relative z-0">
+            <img src="assets/reward_master.png" alt="We Are Warriors Screenshot" class="w-64 md:w-full max-w-xs md:max-w-md rounded-lg">
+        </div>
+
+        <div class="w-full h-0.5 bg-gray-700 mb-8 md:hidden "></div>
+
+        <div class="md:w-1/2 text-center md:text-left md:mr-8 p-8 ">
+            <h3 class="text-4xl md:text-5xl font-bold text-black mb-4">Attack Master</h3>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-xl mx-auto md:mx-0">A reward link aggregator and delivery system for Coin Master by MoonActive.</p>
+
+           <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                <a class="github-button" href="https://github.com/MattJAshworth/AttackMaster" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="View Attack Master on GitHub">View Attack Master on Github</a>
+                <a class="github-button" href="https://github.com/MattJAshworth" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Follow @MattJAshworth on GitHub">Follow @MattJAshworth</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <section id="work-section" class="app-section w-full min-h-screen flex flex-col items-center justify-center p-8 md:p-16 bg-blue-50 reveal-on-scroll">
+        <h3 class="text-4xl md:text-5xl font-bold text-black mb-12 text-center">Professional Work</h3>
+        <div class="container mx-auto max-w-7xl flex flex-col md:flex-row items-center md:items-start justify-center md:gap-8">
+            <div class="carousel-image-area rounded-t-xl md:rounded-xl relative overflow-hidden mb-4 md:mb-0">
+                <div class="carousel-slides">
+                    </div>
+                <button class="carousel-nav-btn prev" aria-label="Previous slide">&#10094;</button>
+                <button class="carousel-nav-btn next" aria-label="Next slide">&#10095;</button>
+            </div>
+
+            <div mx-auto max-w-7xl flex md:flex-row items-center md:items-start justify-center md:gap-8>
+            <div class="work-details-container bg-white p-8 rounded-b-xl md:rounded-xl shadow-xl text-center md:text-left">
+                <h4 id="work-title" class="text-2xl font-bold text-gray-800 mb-2"></h4>
+                <p id="work-role" class="text-lg text-gray-600 mb-0"></p>
+                <p id="work-company" class="text-lg text-gray-600 mb-4"></p>
+                <p id="work-description" class="text-md text-gray-700"></p>
+                <a id="work-link" href="#" class="mt-4 text-indigo-600 hover:underline font-medium block"></a>
+            </div>
+
+            <div id="work-stack-details" class="work-stack-details">
+                </div>
+
+                </div>
+
+        </div>
+
+        <div class="carousel-dots mt-8">
+            </div>
+    </section>
+
+
+<section id="contact" class="bg-gradient-to-r from-indigo-600 to-purple-600 py-16 md:py-24 reveal-on-scroll">
+    <div class="container mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white mb-6">Hello World!</h2>
+        <p class="text-xl text-indigo-100 mb-10 max-w-2xl mx-auto">
+            Check out my dev blog & socials or email me if you'd like to chat!
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 flex-wrap">
+            <a href="mailto:contact@mattjashworth.xyz" class="bg-white hover:bg-gray-100 text-indigo-600 font-bold py-4 px-8 rounded-lg text-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 min-w-[160px] text-center">
+                Email Me
+            </a>
+        </div>
+        <div class="social-icons mt-8">
+                    <a href="https://blog.mattjashworth.xyz" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://linkedin.com/in/mattjashworth" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/mattjashworth" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/mattjashworth" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/mattjashworth" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+    </div>
+</section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 lg:px-8 text-center">
+          
+            <p class="text-gray-400">&copy; <span id="currentYear"></span> Matt J Ashworth. All rights reserved.</p>
+            <p class="text-sm text-gray-500 mt-2">
+                Crafted with <span>&#127829;, &#127866;</span> and code.
+            </p>
+              <div class="text-xs mt-5">
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll animations
+        const scrollElements = document.querySelectorAll(".reveal-on-scroll");
+
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (
+                elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+            );
+        };
+
+        const displayScrollElement = (element) => {
+            element.classList.add("visible");
+        };
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) {
+                    displayScrollElement(el);
+                }
+            });
+        };
+
+        window.addEventListener("scroll", () => {
+            handleScrollAnimation();
+        });
+        // Initial check
+        handleScrollAnimation();
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // === NEW: CAROUSEL JAVASCRIPT (Redesigned) ===
+
+        // Define your project data
+        const workProjects = [
+            {
+                image: "assets/rgt_lunar.png", // 1080x1920 aspect ratio
+                title: "Lunar 2: Workplace App",
+                role: "Lead Android Engineer & Software Architect",
+                company: "Regal Gaming Technologies",
+                description: "Led the complete rewrite of an existing Xamarin Forms app to native Android Kotlin. Implementing new and fresh design ideas along the way. With added technologies such as push notifications, biometrics & more.",
+                link: "#",
+                stack: {
+                    language: ["Kotlin", "XML"],
+                    architecture: ["MVVM", "Clean Architecture"],
+                    libraries: ["Room", "Retrofit", "Firebase", "Lottie", "Glide", "Bouncy Castle", "Gson"],
+                    tools: ["Git", "CI/CD", "Github Actions", "Coroutines" ]
+                }
+            },
+            {
+                image: "assets/rgt_solar.png",
+                title: "Solar 2: Customer Application",
+                role: "Lead Android Engineer & Software Architect",
+                company: "Regal Gaming Technologies",
+                description: "Soley ported a legacy Xamarin Forms app to native Android Kotlin.",
+                link: "#",
+                stack: {
+                    language: ["Kotlin", "XML"],
+                    architecture: ["MVVM"],
+                    libraries: ["Room", "Retrofit", "Firebase", "Lottie", "Glide", "Bouncy Castle", "Gson"],
+                    tools: ["Git", "Coroutines" ]
+                }
+            },
+            {
+                image: "https://placehold.co/250x444/e9d5ff/b8a4cc?text=Mobile+App+Authentication+Refesh+Logic",
+                title: "Mobile App Authentication & Refresh Logic",
+                role: "Frontend & Backend Developer",
+                company: "Regal Gaming Technologies",
+                description: "Developed and implemented secure mobile authentication and refresh token logic, enabling seamless user sessions and automatic token renewal. Integrated token based authentication flows with retrofit and encrypted local storage for reliable concurrent behaviour.",
+                link: "#",
+                stack: {
+                    tools:  ["Kotlin", "C#", "REST", "Coroutines", "WorkManager", "JWT"]
+                }
+            }
+        ];
+
+        // Get DOM elements for carousel and text content
+        const carouselSlidesContainer = document.querySelector('.carousel-slides');
+        const prevBtn = document.querySelector('.carousel-nav-btn.prev');
+        const nextBtn = document.querySelector('.carousel-nav-btn.next');
+        const dotsContainer = document.querySelector('.carousel-dots');
+
+        const workTitle = document.getElementById('work-title');
+        const workRole = document.getElementById('work-role');
+        const workCompany = document.getElementById('work-company')
+        const workDescription = document.getElementById('work-description');
+        const workLink = document.getElementById('work-link');
+
+        const workStackDetails = document.getElementById('work-stack-details')
+
+        let currentSlide = 0; // Index of the currently active slide
+        const totalSlides = workProjects.length; // Total number of slides (based on data)
+
+        /**
+         * Dynamically generates the image slides based on the workProjects data.
+         */
+        function generateSlides() {
+            carouselSlidesContainer.innerHTML = ''; // Clear existing slides
+            workProjects.forEach(project => {
+                const slideItem = document.createElement('div');
+                slideItem.classList.add('carousel-slide-item'); // Apply new class for slide wrapper
+                const img = document.createElement('img');
+                img.src = project.image;
+                img.alt = project.title + " Screenshot";
+                slideItem.appendChild(img);
+                carouselSlidesContainer.appendChild(slideItem);
+            });
+        }
+
+        /**
+         * Updates the carousel display and the text content below it.
+         * Translates the carousel-slides container horizontally and updates text elements.
+         */
+        function updateCarousel() {
+            // Update image carousel position
+            carouselSlidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            // Update text content
+            const currentProject = workProjects[currentSlide];
+            workTitle.textContent = currentProject.title;
+            workRole.innerHTML = `<strong>Role:</strong> ${currentProject.role}`; // Use innerHTML for strong tag
+            workCompany.innerHTML = `<strong>Company:</strong> ${currentProject.company}`;
+            workDescription.textContent = currentProject.description;
+            workLink.href = currentProject.link;
+            workLink.textContent = currentProject.link.includes('github') ? 'View on GitHub' : 'Learn More'; // Example dynamic link text
+            if (currentProject.link === '#') { // Hide link if it's just a placeholder
+                workLink.style.display = 'none';
+            } else {
+                workLink.style.display = 'block';
+            }
+
+            renderStackDetails(currentProject.stack)
+
+            updateDots(); // Update the active pagination dot
+        }
+
+          /**
+         * Renders the stack details cards based on the provided stack object.
+         * @param {object} stack - The stack object for the current project.
+         */
+        function renderStackDetails(stack) {
+            workStackDetails.innerHTML = ''; // Clear previous stack cards
+            if (stack) {
+                // Loop through each property in the stack object
+                for (const category in stack) {
+                    if (stack.hasOwnProperty(category) && Array.isArray(stack[category])) {
+                        // Create a card for each individual item within the category
+                        stack[category].forEach(item => {
+                            const card = document.createElement('div');
+                            card.classList.add('stack-card');
+
+                            // Optionally, you could add the category name here if desired,
+                            // but for "1 line" per card, just the item name is cleaner.
+                            // Example: const categoryLabel = document.createElement('span');
+                            // categoryLabel.textContent = `${category.charAt(0).toUpperCase() + category.slice(1)}: `;
+                            // categoryLabel.classList.add('font-semibold', 'text-gray-600');
+                            // card.appendChild(categoryLabel);
+
+                            const itemName = document.createElement('span');
+                            itemName.textContent = item;
+                            card.appendChild(itemName);
+
+                            workStackDetails.appendChild(card);
+                        });
+                    }
+                }
+            }
+        }
+
+        /**
+         * Updates the pagination dots to reflect the current active slide.
+         * Clears existing dots and recreates them, marking the active one.
+         */
+        function updateDots() {
+            dotsContainer.innerHTML = ''; // Clear all existing dots
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('span'); // Create a new dot element
+                dot.classList.add('carousel-dot'); // Add base styling class
+                if (i === currentSlide) {
+                    dot.classList.add('active'); // Add active class if it's the current slide
+                }
+                // Add click listener to jump to the clicked slide
+                dot.addEventListener('click', () => {
+                    currentSlide = i;
+                    updateCarousel();
+                });
+                dotsContainer.appendChild(dot); // Append the dot to the dots container
+            }
+        }
+
+        /**
+         * Shows the next slide in the carousel.
+         * Cycles back to the first slide if at the end.
+         */
+        function showNextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides; // Increment and wrap around
+            updateCarousel();
+        }
+
+        /**
+         * Shows the previous slide in the carousel.
+         * Cycles to the last slide if at the beginning.
+         */
+        function showPrevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // Decrement and wrap around
+            updateCarousel();
+        }
+
+        // Event Listeners for navigation buttons
+        nextBtn.addEventListener('click', showNextSlide);
+        prevBtn.addEventListener('click', showPrevSlide);
+
+        // Optional: Autoplay functionality (uncomment to enable)
+        // let autoplayInterval = setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+
+        // Optional: Stop autoplay on user interaction (e.g., mouse over carousel)
+        // const carouselContainer = document.querySelector('.carousel-image-area'); // Use the new container
+        // carouselContainer.addEventListener('mouseover', () => clearInterval(autoplayInterval));
+        // carouselContainer.addEventListener('mouseleave', () => autoplayInterval = setInterval(showNextSlide, 5000));
+
+        // Initialize carousel on page load: generate slides, show the first slide, and create dots
+        generateSlides();
+        updateCarousel();
+    </script>
 </body>
 </html>
