@@ -582,5 +582,433 @@
   {
     "id": 145,
     "pickupLine": "Do you like cats? Because I’d like you to take meowt."
+  },
+  {
+    "id": 146,
+    "pickupLine": "Are you a parking ticket? Because you've got 'fine' written all over you."
+  },
+  {
+    "id": 147,
+    "pickupLine": "Is your name Wi-Fi? Because I'm feeling a connection."
+  },
+  {
+    "id": 148,
+    "pickupLine": "Do you believe in love at first swipe?"
+  },
+  {
+    "id": 149,
+    "pickupLine": "If you were a song, you'd be my new favorite single."
+  },
+  {
+    "id": 150,
+    "pickupLine": "Excuse me, I think you dropped something. My jaw."
+  },
+  {
+    "id": 151,
+    "pickupLine": "Are you from Tennessee? Because you're the only Ten I see!"
+  },
+  {
+    "id": 152,
+    "pickupLine": "My doctor told me I need more Vitamin U."
+  },
+  {
+    "id": 153,
+    "pickupLine": "Aside from being gorgeous, what do you do for a living?"
+  },
+  {
+    "id": 154,
+    "pickupLine": "Do you have a map? I keep getting lost in your eyes."
+  },
+  {
+    "id": 155,
+    "pickupLine": "Is it hot in here, or is it just you?"
+  },
+  {
+    "id": 156,
+    "pickupLine": "Are you a camera? Every time I look at you, I smile."
+  },
+  {
+    "id": 157,
+    "pickupLine": "I'm not a mathematician, but I'm pretty good with numbers. Give me yours and watch what I can do."
+  },
+  {
+    "id": 158,
+    "pickupLine": "If beauty were time, you'd be an eternity."
+  },
+  {
+    "id": 159,
+    "pickupLine": "Do you have a band-aid? Because I just scraped my knee falling for you."
+  },
+  {
+    "id": 160,
+    "pickupLine": "Are you a magician? Because whenever I look at you, everyone else disappears."
+  },
+  {
+    "id": 161,
+    "pickupLine": "Is your dad a terrorist? Because you're the bomb."
+  },
+  {
+    "id": 162,
+    "pickupLine": "I'm bad at directions, so I'm going to need you to lead me straight to your heart."
+  },
+  {
+    "id": 163,
+    "pickupLine": "I must be a snowflake, because I've fallen for you."
+  },
+  {
+    "id": 164,
+    "pickupLine": "Are you a loan? Because you have my interest."
+  },
+  {
+    "id": 165,
+    "pickupLine": "Do you like to dance? Because I'd love to take you for a spin."
+  },
+  {
+    "id": 166,
+    "pickupLine": "I'm not sure what's prettier, your eyes or this view."
+  },
+  {
+    "id": 167,
+    "pickupLine": "Are you a phaser? Because you're set to stun."
+  },
+  {
+    "id": 168,
+    "pickupLine": "Can I borrow a kiss? I promise to return it."
+  },
+  {
+    "id": 169,
+    "pickupLine": "Are you a drill sergeant? Because you've got my attention."
+  },
+  {
+    "id": 170,
+    "pickupLine": "If I had a star for every time you brightened my day, I'd have a galaxy."
+  },
+  {
+    "id": 171,
+    "pickupLine": "I hope you're good at algebra, because we're about to add a bed, subtract our clothes, divide your legs, and multiply!"
+  },
+  {
+    "id": 172,
+    "pickupLine": "Are you a candle? Because I want to blow you."
+  },
+  {
+    "id": 173,
+    "pickupLine": "They say Disneyland is the happiest place on Earth. Well, apparently, no one has ever been standing next to you."
+  },
+  {
+    "id": 174,
+    "pickupLine": "Are you a campfire? Because you're hot and I want s'more."
+  },
+  {
+    "id": 175,
+    "pickupLine": "Do you work at the library? Because I'm checking you out."
+  },
+  {
+    "id": 176,
+    "pickupLine": "Are you my phone charger? Because without you, I'd be dead."
+  },
+  {
+    "id": 177,
+    "pickupLine": "I heard you like bad boys. Well, I'm bad at everything."
+  },
+  {
+    "id": 178,
+    "pickupLine": "Do you have a name, or can I call you mine?"
+  },
+  {
+    "id": 179,
+    "pickupLine": "I'm not a religious person, but you're the answer to all my prayers."
+  },
+  {
+    "id": 180,
+    "pickupLine": "Are you a parking ticket? Because you just got yourself a fine."
+  },
+  {
+    "id": 181,
+    "pickupLine": "If you were a song, you'd be on repeat."
+  },
+  {
+    "id": 182,
+    "pickupLine": "Did you invent the airplane? Because you seem Wright for me."
+  },
+  {
+    "id": 183,
+    "pickupLine": "Are you a broom? Because you swept me off my feet."
+  },
+  {
+    "id": 184,
+    "pickupLine": "I must be a neuron, because I'm firing on all cylinders when I'm with you."
+  },
+  {
+    "id": 185,
+    "pickupLine": "Are you a carbon sample? Because I want to date you."
+  },
+  {
+    "id": 186,
+    "pickupLine": "Your eyes are like the ocean, I could swim in them all day."
+  },
+  {
+    "id": 187,
+    "pickupLine": "Do you believe in love at first sight, or should I walk by again?"
+  },
+  {
+    "id": 188,
+    "pickupLine": "If you were a cat, you'd be purr-fect."
+  },
+  {
+    "id": 189,
+    "pickupLine": "Are you a 90-degree angle? Because you're looking right."
+  },
+  {
+    "id": 190,
+    "pickupLine": "Did you just fall from heaven? Because you're an angel."
+  },
+  {
+    "id": 191,
+    "pickupLine": "Are you a trash can? Because I'm about to take you out."
+  },
+  {
+    "id": 192,
+    "pickupLine": "Is your name Cinderella? Because when I saw you, I knew my dreams came true."
+  },
+  {
+    "id": 193,
+    "pickupLine": "If you were a book, I'd never put you down."
+  },
+  {
+    "id": 194,
+    "pickupLine": "Do you like Star Wars? Because Yoda only one for me."
+  },
+  {
+    "id": 195,
+    "pickupLine": "Are you a fruit? Because you're an ex-straw-berry."
+  },
+  {
+    "id": 196,
+    "pickupLine": "If you were a transformer, you'd be Optimus Fine."
+  },
+  {
+    "id": 197,
+    "pickupLine": "Are you a baker? Because you just made my day a whole lot sweeter."
+  },
+  {
+    "id": 198,
+    "pickupLine": "I'm not drunk, I'm just intoxicated by you."
+  },
+  {
+    "id": 199,
+    "pickupLine": "Do you have a map? I got lost in your smile."
+  },
+  {
+    "id": 200,
+    "pickupLine": "Are you a magician? Because you make my problems disappear."
+  },
+  {
+    "id": 201,
+    "pickupLine": "Is your name heaven? Because you look like a dream."
+  },
+  {
+    "id": 202,
+    "pickupLine": "If you were a burger at McDonald's, you'd be a McBeautiful."
+  },
+  {
+    "id": 203,
+    "pickupLine": "Are you a campfire? Because you're smoking hot!"
+  },
+  {
+    "id": 204,
+    "pickupLine": "I'm not a weatherman, but I predict a 100% chance of us hooking up."
+  },
+  {
+    "id": 205,
+    "pickupLine": "Are you from outer space? Because your beauty is out of this world."
+  },
+  {
+    "id": 206,
+    "pickupLine": "Do you like gladiator movies? Because I'd like to get gladiator with you."
+  },
+  {
+    "id": 207,
+    "pickupLine": "Are you a gardener? Because you just made my plant grow."
+  },
+  {
+    "id": 208,
+    "pickupLine": "I must be a squirrel, because I'm nuts about you."
+  },
+  {
+    "id": 209,
+    "pickupLine": "If you were a drug, you'd be highly addictive."
+  },
+  {
+    "id": 210,
+    "pickupLine": "Are you a dog? Because I want to take you home and make you bark."
+  },
+  {
+    "id": 211,
+    "pickupLine": "Do you know what my shirt is made of? Boyfriend material."
+  },
+  {
+    "id": 212,
+    "pickupLine": "Are you a cell tower? Because you're giving me a strong signal."
+  },
+  {
+    "id": 213,
+    "pickupLine": "If I had a penny for every time I thought of you, I'd be rich."
+  },
+  {
+    "id": 214,
+    "pickupLine": "Are you a broken pencil? Because you're pointless without me."
+  },
+  {
+    "id": 215,
+    "pickupLine": "Do you have a quarter? Because I want to call my mom and tell her I just met the love of my life."
+  },
+  {
+    "id": 216,
+    "pickupLine": "Are you a diamond? Because you're absolutely stunning."
+  },
+  {
+    "id": 217,
+    "pickupLine": "I'm not good at anything, except for falling in love with you."
+  },
+  {
+    "id": 218,
+    "pickupLine": "Are you a fruit? Because you're one in a melon."
+  },
+  {
+    "id": 219,
+    "pickupLine": "Do you have an extra heart? Mine just got stolen."
+  },
+  {
+    "id": 220,
+    "pickupLine": "Are you a fire alarm? Because you're loud and annoying, but I still want to spend time with you."
+  },
+  {
+    "id": 221,
+    "pickupLine": "I think there's something wrong with my eyes, because I can't take them off you."
+  },
+  {
+    "id": 222,
+    "pickupLine": "If you were a drug, I'd overdose."
+  },
+  {
+    "id": 223,
+    "pickupLine": "Are you a bank? Because you've got my interest."
+  },
+  {
+    "id": 224,
+    "pickupLine": "Do you like vegetables? Because I love you from my head tomatoes."
+  },
+  {
+    "id": 225,
+    "pickupLine": "Are you a parking meter? Because I'm about to put a quarter in you."
+  },
+  {
+    "id": 226,
+    "pickupLine": "Are you an alien? Because you just abducted my heart."
+  },
+  {
+    "id": 227,
+    "pickupLine": "Do you work at Subway? Because you just gave me a footlong."
+  },
+  {
+    "id": 228,
+    "pickupLine": "I'm not usually this forward, but you're too beautiful to pass up."
+  },
+  {
+    "id": 229,
+    "pickupLine": "If you were a car, you'd be a vintage classic."
+  },
+  {
+    "id": 230,
+    "pickupLine": "Are you a light switch? Because you turn me on."
+  },
+  {
+    "id": 231,
+    "pickupLine": "I'm not a stalker, but I'd love to follow you home."
+  },
+  {
+    "id": 232,
+    "pickupLine": "Are you from Starbucks? Because I like you a latte."
+  },
+  {
+    "id": 233,
+    "pickupLine": "Are you a debt? Because I want to pay you off."
+  },
+  {
+    "id": 234,
+    "pickupLine": "If you were a potato, you'd be a sweet potato."
+  },
+  {
+    "id": 235,
+    "pickupLine": "Are you a beaver? Because dam, you're fine."
+  },
+  {
+    "id": 236,
+    "pickupLine": "Is your name Angel? Because you look like one."
+  },
+  {
+    "id": 237,
+    "pickupLine": "Are you a magician? Because you just made my heart disappear and reappear in your hands."
+  },
+  {
+    "id": 238,
+    "pickupLine": "I'm not a baker, but I can make your dough rise."
+  },
+  {
+    "id": 239,
+    "pickupLine": "Are you a charger? Because I'm dying without you."
+  },
+  {
+    "id": 240,
+    "pickupLine": "If you were a booger, I'd pick you first."
+  },
+  {
+    "id": 241,
+    "pickupLine": "My heart skipped a beat when I saw you. Can I sue you for assault?"
+  },
+  {
+    "id": 242,
+    "pickupLine": "Are you a unicorn? Because you're rare and magical."
+  },
+  {
+    "id": 243,
+    "pickupLine": "If you were a stop sign, I'd never stop."
+  },
+  {
+    "id": 244,
+    "pickupLine": "Do you have a name, or can I just call you 'mine'?"
+  },
+  {
+    "id": 245,
+    "pickupLine": "Are you a good listener? Because I have a lot of complaints about how single I am."
+  },
+  {
+    "id": 246,
+    "pickupLine": "If you were a cat, you'd be a 'meow-velous' catch."
+  },
+  {
+    "id": 247,
+    "pickupLine": "Are you a phone? Because I want to dial your number."
+  },
+  {
+    "id": 248,
+    "pickupLine": "I'm not a cannibal, but I'd like to eat you out."
+  },
+  {
+    "id": 249,
+    "pickupLine": "Are you a book? Because I can't wait to read you all night."
+  },
+  {
+    "id": 250,
+    "pickupLine": "If you were a crime, you'd be a grand theft hottie."
+  },
+  {
+    "id": 251,
+    "pickupLine": "Are you a red light? Because I stop and stare every time I see you."
+  },
+  {
+    "id": 252,
+    "pickupLine": "Is your name Summer? Because you're hot."
   }
 ]
