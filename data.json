@@ -105,6 +105,22 @@
       },
       "sections": [
         {
+          "id": "app-fuelfind",
+          "type": "app_card",
+          "title": "FuelFind",
+          "desc": "Data-Driven Refueling: Real-Time Fuel Price Price Analytics, Route Optimization & Driving Companion.",
+          "icon": "/assets/fuelfind_logo.png",
+          "details": {
+            "about": "<b>FuelFind is in development. Screenshots are not representational of a production build.</b>\n\nFuelFind is like any other Fuel Price app, using realtime API data. <b>But better.</b>\n\nFree, without ads, highly performant, with widgets. This is an app for the casual driver, the car freaks and the nerds.\n\nAt your fingertips fuel prices for unleaded, premium, diesel, and electric in app or on your homescreen (widgets), for any station, across the country.\n\nWith advanced features like:\n\u2022 <b>Push Notifications:</b> For realtime price alerts.\n\u2022 <b>Historical Pricing Data</b>\n\u2022 <b>Route Planning:</b> Driving long distance? Need to refuel? Be efficient and cost effective with FuelFind.",
+            "stack": ["Kotlin", "XML", "Retrofit", "Room", "Koin", "WorkManager"],
+            "screenshots": [
+              "/assets/fuelfind_0.png",
+              "/assets/fuelfind_1.png"
+            ],
+            "links": [{ "label": "Coming Soon", "icon": "assets/googleplay-white.svg", "url": "https://play.google.com/store/apps/dev?id=6695108313343601145" }]
+          }
+        },
+        {
           "id": "app-lifetime",
           "type": "app_card",
           "title": "Lifetime",
