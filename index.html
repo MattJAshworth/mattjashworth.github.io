@@ -105,7 +105,33 @@
                 if (urlParams.has('privacy')) {
                     openTerms();
                 }
+
+                const keys = Array.from(urlParams.keys());
+
+                if (keys.length > 0) {
+                    Object.values(portfolioData.pages).forEach(page => {
+                        const foundProject = (page.sections || []).find(section => {
+                            if (section.type === 'app_card' || section.type === 'card') {
+                                const projectTitle = section.title.toLowerCase().replace(/\s+/g, '-');
+                                const projectTitleNoDashes = section.title.toLowerCase().replace(/\s+/g, '');
                 
+            
+                                return keys.includes(projectTitle) || keys.includes(projectTitleNoDashes);
+                            }
+                            return false;
+                        });
+
+                        if (foundProject) {
+                            if (foundProject.id == 'app-lunar' || foundProject.id == 'app-solar') {
+                                state.activeTab = 'work';
+                            } else {
+                                state.activeTab = 'apps';
+                            }
+                            state.selectedApp = foundProject;
+                        }
+                    });
+                }
+
                 // Set initial content
                 state.pageContent = portfolioData.pages[state.activeTab];
                 
@@ -163,6 +189,7 @@
         window.goBack = () => {
             state.selectedApp = null;
             state.showTerms = false;
+            history.pushState(null, "", location.href.split("?")[0]);
             render();
         };
 

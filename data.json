@@ -115,7 +115,10 @@
             "stack": ["Kotlin", "XML", "Retrofit", "Room", "Koin", "WorkManager"],
             "screenshots": [
               "/assets/fuelfind_0.png",
-              "/assets/fuelfind_1.png"
+              "/assets/fuelfind_1.png",
+              "/assets/fuelfind_2.png",
+              "/assets/fuelfind_3.png",
+              "/assets/fuelfind_4.png"
             ],
             "links": [{ "label": "Coming Soon", "icon": "assets/googleplay-white.svg", "url": "https://play.google.com/store/apps/dev?id=6695108313343601145" }]
           }
@@ -139,9 +142,25 @@
           }
         },
         {
+          "id": "app-metrobee",
+          "type": "app_card",
+          "title": "MetroBee",
+          "desc": "A Manchester Metrolink Travel App",
+          "icon": "/assets/metrobee_logo.png",
+          "details": {
+            "about": "<b>Live Departures - Map - Stations - Travel Alerts - Widgets - WearOS Companion</b>\n\nA Manchester Metrolink Travel App\n\nMetroBee was my vision for catching a tram in Manchester, before the Bee Network became a thing...\n\nUnfortunately Transport for Greater Manchester decided to deprecate their open data API, with no replacement I was forced to abandon the project.",
+            "stack": ["Kotlin", "XML", "Retrofit", "Room", "TFGM Open Data API"],
+            "screenshots": [
+              "/assets/metrobee_0.png",
+              "/assets/metrobee_1.png",
+              "/assets/metrobee_2.png"
+            ]
+          }
+        },
+        {
           "id": "app-ember",
           "type": "app_card",
-          "title": "Ember: A Dating Companion",
+          "title": "Ember",
           "desc": "A dating companion app that serves pickup lines and puns for any situation.",
           "icon": "/assets/ember_logo.jpg",
           "details": {
