@@ -111,16 +111,19 @@
           "desc": "Data-Driven Refueling: Real-Time Fuel Price Price Analytics, Route Optimization & Driving Companion.",
           "icon": "/assets/fuelfind_logo.png",
           "details": {
-            "about": "<b>FuelFind is in development. Screenshots are not representational of a production build.</b>\n\nFuelFind is like any other Fuel Price app, using realtime API data. <b>But better.</b>\n\nYour next driving companion! This is an app for the casual driver, the car freaks and the nerds.\n\nAt your fingertips fuel prices for unleaded, premium, and diesel in app or on your homescreen (widgets), for any station, across the country.\n\nWith advanced features like:\n\u2022 <b>Push Notifications:</b> For realtime price alerts.\n\u2022 <b>Historical Pricing Data</b>\n\u2022 <b>Route Planning:</b> Driving long distance? Need to refuel? Be efficient and cost effective with FuelFind.",
+            "about": "FuelFind is like any other Fuel Price app, using realtime API data. <b>But better.</b>\n\nYour next driving companion! This is an app for the casual driver, the car freaks and the nerds.\n\nAt your fingertips fuel prices for unleaded, premium, and diesel in app or on your homescreen (widgets), for any station, across the country.\n\nView real-time fuel prices across the map. Move the map to see prices instantly update to that area.\n\nWith FuelFind you always get <b>The Best Deal</b>\n\nWith advanced features like:\n\u2022 <b>Push Notifications:</b> For realtime price alerts.\n\u2022 <b>Custom Alets:</b> Setup price alerts for your current location, specific locations and/or when a price in these areas fall below a threshold you want to pay.\n\nComing Soon:\n\u2022 <b>Android Auto:</b> Mid drive? Use FuelFind safely on the go! Directing you to the nearest & cheapest fuel on your journey! \n\u2022 <b>Historical Pricing Data</b>: Has fuel gone up or down over the last weeks, months & years?\n\u2022 <b>Trends:</b> Giving you analysis into how and when prices go up or down. Where the cheapest and most expensive fuel cities are? & more. \n\u2022 <b>Route Planning:</b> Driving long distance? Need to refuel? Be efficient and cost effective with FuelFind.",
             "stack": ["Kotlin", "XML", "Retrofit", "Room", "Koin", "WorkManager"],
             "screenshots": [
-              "/assets/fuelfind_0.png",
-              "/assets/fuelfind_1.png",
-              "/assets/fuelfind_2.png",
-              "/assets/fuelfind_3.png",
-              "/assets/fuelfind_4.png"
+              "/assets/fuelfind_0.jpg",
+              "/assets/fuelfind_1.jpg",
+              "/assets/fuelfind_2.jpg",
+              "/assets/fuelfind_3.jpg",
+              "/assets/fuelfind_4.jpg",
+              "/assets/fuelfind_5.jpg",
+              "/assets/fuelfind_6.jpg",
+              "/assets/fuelfind_7.jpg"
             ],
-            "links": [{ "label": "Pre Register", "icon": "assets/googleplay-white.svg", "url": "https://fuelfind.app" }]
+            "links": [{ "label": "Website", "icon": "link", "url": "https://fuelfind.app" }, { "label": "Get on Google Play", "icon": "assets/googleplay-white.svg", "url": "https://fuelfind.app/download" }]
           }
         },
         {
@@ -172,7 +175,7 @@
               "/assets/ember_2.webp",
               "/assets/ember_3.webp"
             ],
-            "links": [{ "label": "Play Store", "icon": "play", "url": "https://play.google.com/store/apps/details?id=xyz.mattjashworth.ember" }]
+            "links": [{ "label": "Get on Google Play", "icon": "assets/googleplay-white.svg", "url": "https://play.google.com/store/apps/details?id=xyz.mattjashworth.ember" }]
           }
         },
         {

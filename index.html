@@ -446,7 +446,7 @@
                             </div>
                             <div class="grid grid-cols-1 gap-3 pt-4">
                                 ${(app.details?.links || []).map((l, i) => `
-                                    <a href="${l.url}" target="_blank" class="flex items-center justify-center gap-2 py-4 rounded-2xl font-bold transition-all ${i === 0 ? 'bg-blue-600 text-white shadow-md' : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white'}">
+                                    <a href="${l.url}" target="_blank" class="flex items-center justify-center gap-2 py-4 rounded-2xl font-bold transition-all ${i === 0 ? 'bg-blue-600 text-white shadow-md' : 'bg-emerald-800 dark:bg-emerald-700 text-white dark:text-white'}">
                                         ${getIconHtml(l.icon, 20)} ${l.label}
                                     </a>
                                 `).join('')}
